@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MiracleVBox3ers | Box3半AI虚拟创作者</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://cdn-community.codemao.cn/47/community/d2ViXzMwMDFfNDM0NTM5XzBfMTY1MjI4MDU1NjQyMV8wY2U0NjYzOQ.png">
+	<style>
+	body{
+		background-color:rgb(240,240,240);
+	}
+	#nav{
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:75px;
+		background-color:rgb(199,234,255);
+		position:fixed;
+	}
+	#navname1{
+		letter-spacing:5px;
+		margin-left:50px;
+		font-weight:100;
+		color:rgb(58,149,219);
+		font-size:30px;
+	}
+	#navname2{
+		letter-spacing:5px;
+		font-weight:100;
+		height:50px;
+		color:rgb(255,255,255);
+		font-size:30px;
+		background-color:rgb(58,149,219);
+		border-radius:10px;
+	}
+	#navbuts{
+		position:absolute;
+		top:0px;
+		right:125px;
+		position:stalic;
+		letter-spacing:-10px;
+	}
+	#navbut1,#navbut2,#navbut3,#navbut4{
+		width:80px;
+		color:rgb(58,149,219);
+		/*position:absolute;
+		top:0px;*/
+		height:75px;
+		background:transparent;
+		border:none;
+		position:stalic;
+	}
+	#navbut1{
+		color:rgb(255,255,255);
+		background-color:rgb(58,149,219);
+	}
+	#navbut1:hover,#navbut2:hover,#navbut3:hover,#navbut4:hover{
+		color:rgb(255,255,255);
+		background-color:rgb(58,149,219);
+	}
+	#navbut5{
+		font-size:15px;
+		font-weight:600;
+		position:absolute;
+		top:0px;
+		right:50px;
+		position:stalic;
+		width:75px;
+		color:rgb(255,255,255);
+		height:75px;
+		background-color:rgb(253,86,16);
+		border:none;
+		position:stalic;
+	}
+	button:hover{cursor:pointer;}
+	#show_hataru,#show_other1,#show_other2,#show_other3{
+		transition: all 0.5s;
+		border-radius:5px;
+		height:375px;
+		width:175px;
+		text-align:center;
+		line-height:10px;
+	}
+	#show_hataru{
+		background: #fff url(https://cdn-community.codemao.cn/47/community/d2ViXzMwMDFfNDM0NTM5XzBfMTY1MTk5NDg3OTAxMl80ZGIzNTA5Ng.jpeg) no-repeat;
+		box-shadow:0px 0px 10px 8px rgba(58,149,219,0.3);
+		background-size:100% 93.333333%;
+		position:absolute;
+		left:13%;
+		top:25%;
+		position:stalic;
+	}
+	#show_hataru p{position:absolute;left:50%;bottom:0;margin-left:-32%;color:rgb(58,149,219)}
+	#show_other1{
+		box-shadow:0px 0px 10px 8px rgba(150,150,150,0.3);
+		position:absolute;
+		left:33%;
+		top:25%;
+		position:stalic;
+	}
+	#show_other2{
+		box-shadow:0px 0px 10px 8px rgba(150,150,150,0.3);
+		position:absolute;
+		left:53%;
+		top:25%;
+		position:stalic;
+	}
+	#show_other3{
+		box-shadow:0px 0px 10px 8px rgba(150,150,150,0.3);
+		position:absolute;
+		left:73%;
+		top:25%;
+		position:stalic;
+	}
+	#show_hataru:hover{
+		transform:scale(1.05);
+		box-shadow:0px 0px 16px 10px rgba(58,149,219,0.5);
+	}
+	</style>
+</head>
+<body>
+
+<div id="nav">
+	<p onclick="gotoIndex();">
+		<span id="navname1">Miracle</span>
+		<span id="navname2">&nbsp;VBox3ers </span>
+		&nbsp;&nbsp;
+	</p>
+	<div id="navbuts">
+		<button id="navbut1" onclick="gotoHome();">首 页</button>
+		<button id="navbut2">展 厅</button>
+		<button id="navbut3" onclick="gotoMerch();">周 边</button>
+		<button id="navbut4" onclick="gotoTeam();">团 队</button>
+	</div>
+	<button id="navbut5" onclick="gotoBox3();">Box3 ⇒</button>
+</div>
+<div id="show_vboxers">
+	<div id="show_hataru">
+	<p>- 瑶光Hataru -</p>
+	</div>
+	<div id="show_other1">
+	
+	</div>
+	<div id="show_other2">
+	
+	</div>
+	<div id="show_other3">
+	
+	</div>
+</div>
+
+<script>
+function gotoHome(){window.open("https://miraclevbox3ers.github.io/",'_self');}
+function gotoMerch(){window.open("https://miraclevbox3ers.github.io/merch.html",'_self');}
+function gotoTeam(){window.open("https://miraclevbox3ers.github.io/team.html",'_self');}
+function gotoBox3(){window.open("https://box3.codemao.cn/");}
+function gotoIndex(){window.open("https://miraclevbox3ers.github.io");}
+</script>
+
+</body>
+</html>
