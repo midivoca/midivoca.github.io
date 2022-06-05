@@ -3,6 +3,7 @@
 <head>
 	<title>MidiVoca | 在线音乐创作</title>
 	<meta charset="utf-8">
+	<link rel="icon" href="https://midivoca.github.io/image/icon.png">
 	<style>
 	body{
 		background-color:rgb(240,240,240);
@@ -76,13 +77,19 @@
 		position:stalic;
 	}
 	button:hover{cursor:pointer;}
+	#navimg{
+		height:75px;
+		position:absolute;
+		top:50%;
+		margin-top:-37.5px;
+	}
 	</style>
 </head>
 <body>
 
 <div id="nav">
 	<p onclick="gotoIndex();">
-		<span id="navname1">MidiVoca</span>
+		<span id="navname1"><img src="https://midivoca.github.io/image/logo.png" id="navimg"/>MidiVoca</span>
 		&nbsp;&nbsp;
 	</p>
 	<div id="navbuts" align="center">
