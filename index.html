@@ -82,6 +82,74 @@
 		top:50%;
 		margin-top:-37.5px;
 	}
+	#navicon{
+		height:35px;
+		position:absolute;
+		top:25%;
+		left:50%;
+		margin-left:-100px;
+		margin-top:-12.5px;
+	}
+	#bottom_div{
+		/*position:absolute;
+		bottom:0px;
+		left:0px;*/
+		background-color:rgb(255,255,255);
+		width:100%;
+		color:rgb(150,150,150);
+		font-size:15px;
+	}
+	a{text-decoration:none;color:rgb(150,150,150);text-shadow: 2px 2px 5px rgb(58,149,219);}
+	#br{height:10px;}
+	#lines{
+		height:0px;
+		background-color:rgb(230,230,230);
+		border:0.1px solid rgb(230,230,230);
+		width:100%;
+	}
+	#copyright{text-align:center;}
+	#introduce{height:150px;}
+	#intro_left_1st{
+		line-height:0px;
+		margin-left:50px;
+		position:absolute;
+		left:0px;
+	}
+	#intro_left_2st{
+		line-height:30px;
+		margin-right:50px;
+		position:absolute;
+		left:40%;
+	}#intro_left_3st{
+		line-height:30px;
+		margin-right:50px;
+		position:absolute;
+		left:66.7%;
+	}#intro_left_4st{
+		line-height:30px;
+		margin-right:50px;
+		position:absolute;
+		right:0%;
+	}
+	#intro_left_1st img{height:60px;}
+	#intro_left_1st p{font-size:25px;font-weight:600;color:rgb(58,149,219);}
+	#introduce span{font-weight:600;}
+	#main_body{
+		margin-left:50px;
+		margin-right:50px;
+	}
+	#top_pic img{width:100%;border-radius:15px;}
+	#nav_br{height:75px;}
+	#text{font-weight:100;}
+	#text_title{font-size:30px;}
+	#text_body{font-size:18px;}
+	#text_body_subtitle{
+		padding-left:10px;
+		color:rgb(58,149,219);
+		border-left:5px solid rgb(58,149,219);
+		font-size:22px;
+		font-weight:600;
+	}
 	</style>
 </head>
 <body>
@@ -101,6 +169,75 @@
 	<button id="navbut_create">＋ 创 作</button>
 </div>
 
+<div id="nav_br"></div>
+
+<div id="main_body">
+	<div id="top_pic" align="center">
+		<img src="https://midivoca.github.io/image/shouye_pic_1.png"/>
+	</div>
+	<div id="text">
+		<div id="text_title" align="center">
+			<p>欢迎使用MidiVoca!</p>
+		</div>
+		<div id="text_body">
+			<p>MidiVoca(Midi Virtual Vocalist)是一款虚拟歌手Midi在线创作平台。在这里，您可以进行midi创作，并填词，使用我们开发的虚拟歌手演唱。</p>
+			<p>网站功能：钢琴键盘、人声键盘、Midi音乐创作、作品展示</p>
+			<p id="text_body_subtitle">视频作品</p>
+			<p align="center">暂无更多</p>
+			<p id="text_body_subtitle">音频作品</p>
+			<p align="center">暂无更多</p>
+			<p id="text_body_subtitle">声库</p>
+			<p align="center">暂无更多</p>
+			<div id="br"></div>
+			<p align="center">-暂无更多推荐内容，欢迎探索网站-</p>
+		</div>
+	</div>
+</div>
+
+<footer id="bottom_div">
+	<div id="introduce">
+		<div id="intro_left_1st">
+			<div id="br"></div><div id="br"></div>
+			<img src="https://midivoca.github.io/image/logo.png"/>
+			<p>虚拟歌手Midi在线创作平台</p>
+			<div id="br"></div>
+		</div>
+		<div id="intro_left_2st">
+			<p>
+			<span>使用教程</span><br>
+			<a>● 创作端</a><br>
+			<a>● Q&A</a><br>
+			<a>● 键盘</a><br>
+			</p>
+			<div id="br"></div>
+		</div>
+		<div id="intro_left_3st">
+			<p>
+			<span>关于我们</span><br>
+			<a>● 项目介绍</a><br>
+			<a>● 作者介绍</a><br>
+			</p>
+			<div id="br"></div>
+		</div>
+		<div id="intro_left_4st">
+			<p>
+			<span>服务协议</span><br>
+			<a>● 用户协议</a><br>
+			<a>● 免责声明</a><br>
+			</p>
+			<div id="br"></div>
+		</div>
+	</div>
+	
+	<div id="lines"></div>
+	
+	<div id="copyright">
+		<div id="br"></div>
+		<p>版权所有 © 2022 MidiVoca R&D Group</p>
+		<p>Gitee : <a href="https://gitee.com/midivoca">@MidiVoca</a> | Github : <a href="https://github.com/midivoca">@midivoca</a></p>
+		<div id="br"></div>
+	</div>
+</footer>
 
 <script>
 
