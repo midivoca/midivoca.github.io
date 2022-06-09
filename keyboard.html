@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MidiVoca | 钢琴键盘</title>
+    <script type="text/javascript">document.oncontextmenu = function () { return false };</script>
+    <link rel="icon" href="https://midivoca.github.io/image/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/play.js"></script>
+</head>
+
+<body onkeydown="computer_playing(event);">
+
+    <div id="nav">
+        <p onclick="gotoIndex();">
+            <span id="navname1"><img src="https://midivoca.github.io/image/logo.png" id="navimg" />MidiVoca</span>
+            &nbsp;&nbsp;
+        </p>
+        <div id="navbuts" align="center">
+            <button id="navbut">首 页</button>
+            <button id="navbut_">钢琴键盘</button>
+            <button id="navbut">人声键盘</button>
+            <button id="navbut">作品展厅</button>
+            <button id="navbut">消息中心</button>
+        </div>
+        <div>
+            <button id="navbut_create">＋ 创 作</button>
+            <!--<button id="navbut_login">登录/注册</button>-->
+        </div>
+    </div>
+
+    <div id="nav_br"></div>
+
+    <div id="main_body">
+        <div id="text">
+            <div id="text_title" align="center">
+                <p>钢琴键盘</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="keyboard" align="center">
+        <div id="eight_degree_area">
+            <div id="whiteKey" onclick="piano_playing('C3');">
+                <div id="noteName"></div>
+                <div id="keyName">C3</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('C3s');">
+                <div id="noteName"></div>
+                <div id="keyName">#C3</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('D3');">
+                <div id="noteName"></div>
+                <div id="keyName">D3</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('D3s');">
+                <div id="noteName"></div>
+                <div id="keyName">#D3</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('E3');">
+                <div id="noteName"></div>
+                <div id="keyName">E3</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('F3');">
+                <div id="noteName"></div>
+                <div id="keyName">F3</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('F3s');">
+                <div id="noteName"></div>
+                <div id="keyName">#F3</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('G3');">
+                <div id="noteName"></div>
+                <div id="keyName">G3</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('G3s');">
+                <div id="noteName"></div>
+                <div id="keyName">#G3</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('A3');">
+                <div id="noteName"></div>
+                <div id="keyName">A3</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('A3s');">
+                <div id="noteName"></div>
+                <div id="keyName">#A3</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('B3');">
+                <div id="noteName"></div>
+                <div id="keyName">B3</div>
+            </div>
+        </div>
+        <div id="eight_degree_area">
+            <div id="whiteKey" onclick="piano_playing('C4');">
+                <div id="noteName"></div>
+                <div id="keyName">C4</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('C4s');">
+                <div id="noteName"></div>
+                <div id="keyName">#C4</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('D4');">
+                <div id="noteName"></div>
+                <div id="keyName">D4</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('D4s');">
+                <div id="noteName"></div>
+                <div id="keyName">#D4</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('E4');">
+                <div id="noteName"></div>
+                <div id="keyName">E4</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('F4');">
+                <div id="noteName"></div>
+                <div id="keyName">F4</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('F4s');">
+                <div id="noteName"></div>
+                <div id="keyName">#F4</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('G4');">
+                <div id="noteName"></div>
+                <div id="keyName">G4</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('G4s');">
+                <div id="noteName"></div>
+                <div id="keyName">#G4</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('A4');">
+                <div id="noteName"></div>
+                <div id="keyName">A4</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('A4s');">
+                <div id="noteName"></div>
+                <div id="keyName">#A4</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('B4');">
+                <div id="noteName"></div>
+                <div id="keyName">B4</div>
+            </div>
+        </div>
+        <div id="eight_degree_area">
+            <div id="whiteKey" onclick="piano_playing('C5');">
+                <div id="noteName"></div>
+                <div id="keyName">C5</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('C5s');">
+                <div id="noteName"></div>
+                <div id="keyName">#C5</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('D5');">
+                <div id="noteName"></div>
+                <div id="keyName">D5</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('D5s');">
+                <div id="noteName"></div>
+                <div id="keyName">#D5</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('E5');">
+                <div id="noteName"></div>
+                <div id="keyName">E5</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('F5');">
+                <div id="noteName"></div>
+                <div id="keyName">F5</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('F5s');">
+                <div id="noteName"></div>
+                <div id="keyName">#F5</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('G5');">
+                <div id="noteName"></div>
+                <div id="keyName">G5</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('G5s');">
+                <div id="noteName"></div>
+                <div id="keyName">#G5</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('A5');">
+                <div id="noteName"></div>
+                <div id="keyName">A5</div>
+            </div>
+            <div id="blackKey" onclick="piano_playing('A5s');">
+                <div id="noteName"></div>
+                <div id="keyName">#A5</div>
+            </div>
+            <div id="whiteKey" onclick="piano_playing('B5');">
+                <div id="noteName"></div>
+                <div id="keyName">B5</div>
+            </div>
+        </div>
+        <div id="eight_degree_area">
+            <div id="whiteKey" onclick="piano_playing('C6');">
+                <div id="noteName"></div>
+                <div id="keyName">C6</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav_br"></div>
+    <div id="nav_br"></div>
+    <div id="nav_br"></div>
+
+    <footer id="bottom_div">
+        <div id="introduce">
+            <div id="intro_left_1st">
+                <div id="br"></div>
+                <div id="br"></div>
+                <img src="https://midivoca.github.io/image/logo.png" />
+                <p>虚拟歌手Midi在线创作平台</p>
+                <div id="br"></div>
+            </div>
+            <div id="intro_left_2st">
+                <p>
+                    <span>使用教程</span><br>
+                    <a>● 创作端</a><br>
+                    <a>● Q&A</a><br>
+                    <a>● 键盘</a><br>
+                </p>
+                <div id="br"></div>
+            </div>
+            <div id="intro_left_3st">
+                <p>
+                    <span>关于我们</span><br>
+                    <a>● 项目介绍</a><br>
+                    <a>● 作者介绍</a><br>
+                </p>
+                <div id="br"></div>
+            </div>
+            <div id="intro_left_4st">
+                <p>
+                    <span>服务协议</span><br>
+                    <a>● 用户协议</a><br>
+                    <a>● 免责声明</a><br>
+                </p>
+                <div id="br"></div>
+            </div>
+        </div>
+
+        <div id="lines"></div>
+
+        <div id="copyright">
+            <div id="br"></div>
+            <p>版权所有 © 2022 MidiVoca R&D Group</p>
+            <p>Gitee : <a href="https://gitee.com/midivoca">@MidiVoca</a> | Github : <a
+                    href="https://github.com/midivoca">@midivoca</a></p>
+            <div id="br"></div>
+        </div>
+    </footer>
+
+    <script>
+        function computer_playing(event) {
+            var computer_key = event.keyCode || event.which;
+            //此处应该搞按键盘,播放音频，但我不会（）
+        }
+        function piano_playing(keyname) {
+            window[keyname].play();
+        }
+    </script>
+
+</body>
+
+</html>
